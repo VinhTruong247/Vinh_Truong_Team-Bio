@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Bahnschrift;
+}
+
+header{
+	background-image: url('../images/background.jpeg');
+	background-position: 0;
+	background-repeat: no-repeat;
+	height: 150px;
+	position: relative;
+}
+
+.heading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 0 !important;
+	margin: 0!important;
+	border-bottom: black solid 2px;
+}
+
+nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 60px 0 60px;
+}
+
+nav h2{
+	color: white;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	padding-right: 10px;
+	margin-top: 40px;
+	margin-right: 20px;
+}
+
+nav li a{
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	background-color: white;
+	padding: 5px;
+	border: black solid 2px;
+	border-radius: 4px;
+}
+
+nav li a:hover{
+	background-color: black;
+	color: red;
+}
+
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	padding-bottom: 50px;
+}
+
+button{
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+	bottom: 37px;
+}
+
+.text_container,
+.text_container1,
+.text_container2{
+	display: none;
+}
+
+.text_container-toggled,
+.text_container1-toggled,
+.text_container2-toggled{
+	display: block;
+}
+
+.info_button,
+.info_button1,
+.info_button2{
+	opacity:0;
+}
+
+.info_button:hover,
+.info_button1:hover,
+.info_button2:hover{
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+	border:black solid 2px;
+}
+
+.member{
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.member h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.member h4{
+	font-family: Arial;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.member img{
+	border:black solid 2px;
+}
+
+.member p{
+	padding: 5px;
+	width: 300px;
+}
